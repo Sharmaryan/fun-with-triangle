@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+:root {
+  --primary-color: #34d399;
+  --secondary-color: white;
+}
+.nav-container {
+  background-color: var(--primary-color);
+  height: 18vh;
+  border-bottom-left-radius: 1rem;
+  
+}
+
+.nav-brand {
+
+  padding-top: 0.4rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  text-align: left;
+}
+.nav-container a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  padding: 0 0.3rem;
+}
+.nav-container ul {
+  margin-top: 1.5rem;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: right;
+  padding-right: .4rem;
+
+}
+.nav-container li {
+  display: inline;
+}
+.main-container{
+    padding-top: 1rem;
+}
+.main-container{
+    max-width: 600px;
+    
+    margin: auto;
+}
+.main-container label{
+    color:var(--primary-color);
+    text-align: center;
+    display: block;
+    padding: 1rem 0;
+    font-size: large;
+    text-transform: capitalize;
+}
+
+.main-container input{
+    text-align: left;
+    border: 2px solid var(--primary-color); 
+    padding: .5rem .3rem;
+    border-radius: 10px;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+button{
+    display: block;
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+#output{
+  text-transform: capitalize;
+}
+footer{
+    padding-bottom: 1rem;
+}
+footer p{
+  padding: 1rem 0;  
+}
+
+footer .icons i{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    padding: 0 .4rem;
+}
