@@ -10,10 +10,11 @@ header p{
 
 }
 .questions{
-    padding: 1rem 0;
-    
+    padding: 1rem 3rem;
+    border: 1px solid black;
     letter-spacing: .1rem;
-
+    margin: 1rem auto;
+    max-width: 400px;
 }
 button{
     text-transform: capitalize;
