@@ -8,22 +8,38 @@ function calculateSumOfAngles(angle1, angle2, angle3) {
   return sum;
 }
 
+function showMsg(msg) {
+  msgOutput.innerText = msg;
+}
+
 function isTriangle() {
-
-
-  const sumOfAllAngles = calculateSumOfAngles(
-    inputAngles[0],
-    inputAngles[1],
-    inputAngles[2]
-    );
-    
-    if (sumOfAllAngles === 180) {
-      msgOutput.innerText = "Yay, the angles form a triangle!";
+  if (inputAngles[0].value && inputAngles[1].value && inputAngles[2].value) {
+    if (
+      inputAngles[0].value <= 0 ||
+      inputAngles[1].value <= 0 ||
+      inputAngles[2].value <= 0
+    ) {
+      const message = `Value should be greater than 0`;
+      showMsg(message);
     } else {
-      msgOutput.innerText = "Oh Oh! The angle doesn't form a triangle";
+      const sumOfAllAngles = calculateSumOfAngles(
+        inputAngles[0],
+        inputAngles[1],
+        inputAngles[2]
+      );
+
+      if (sumOfAllAngles === 180) {
+        const message = `Yay, the angles form a triangle!`;
+        showMsg(message);
+      } else {
+        const message = `Oh Oh! The angle doesn't form a triangle`;
+        showMsg(message);
+      }
     }
-  
-  
+  } else {
+    const message = `All fields are mandatory, don't leave empty`;
+    showMsg(message);
+  }
 }
 
 checkBtn.addEventListener("click", isTriangle);
