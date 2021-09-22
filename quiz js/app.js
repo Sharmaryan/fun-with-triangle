@@ -1,6 +1,7 @@
 const form = document.querySelector(".quiz-form");
 const submitBtn = document.querySelector(".submit-btn");
 const showOutput = document.querySelector(".output");
+const question = document.querySelectorAll(".questions");
 
 const answerList = [
   "3",
@@ -17,11 +18,15 @@ const answerList = [
 
 function calculateScore(event) {
   event.preventDefault();
-  let score = 0,index = 0;
+  let score = 0,
+    index = 0;
   const formResults = new FormData(form);
   for (let value of formResults.values()) {
     if (value === answerList[index]) {
       score = score + 1;
+      question[index].style.background = "green";
+    } else {
+      question[index].style.background = "red";
     }
     index = index + 1;
   }
