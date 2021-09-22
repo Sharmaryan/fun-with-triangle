@@ -15,10 +15,10 @@ const answerList = [
   "False",
 ];
 
-function calculateScore() {
+function calculateScore(event) {
+  event.preventDefault();
+  let score = 0,index = 0;
   const formResults = new FormData(form);
-  let score = 0,
-    index = 0;
   for (let value of formResults.values()) {
     if (value === answerList[index]) {
       score = score + 1;
@@ -26,6 +26,7 @@ function calculateScore() {
     index = index + 1;
   }
   showOutput.innerText = `The Score is ${score}`;
+  submitBtn.style.display = "none";
 }
 
-submitBtn.addEventListener("click", calculateScore);
+form.addEventListener("submit", calculateScore);

@@ -29,26 +29,26 @@
     <form class="quiz-form">
       <div class="questions">
         <p>How many vertices does a triangle have?</p>
-        <label><input type="radio" name="question1" value="1" />1</label>
-        <label><input type="radio" name="question1" value="2" />2</label>
-        <label><input type="radio" name="question1" value="3" />3</label>
+        <label><input type="radio" name="question1" value="1" required/>1</label>
+        <label><input type="radio" name="question1" value="2" required/>2</label>
+        <label><input type="radio" name="question1" value="3" required/>3</label>
       </div>
 
       <div class="questions">
         <p>How many sides are there in a triangle?</p>
-        <label> <input type="radio" name="question2" value="1" />1 </label>
-        <label><input type="radio" name="question2" value="2" />2</label>
-        <label><input type="radio" name="question2" value="3" />3</label>
+        <label> <input type="radio" name="question2" value="1" required/>1 </label>
+        <label><input type="radio" name="question2" value="2" required/>2</label>
+        <label><input type="radio" name="question2" value="3" required/>3</label>
       </div>
 
       <div class="questions">
         <p>If two sides of a triangle are not equal, the triangle is called?</p>
         <label>
-          <input type="radio" name="question3" value="scalene" />
+          <input type="radio" name="question3" value="scalene" required />
           scalene
         </label>
         <label
-          ><input type="radio" name="question3" value="isosceles" />
+          ><input type="radio" name="question3" value="isosceles" required/>
           isosceles</label
         >
         <label
@@ -63,18 +63,18 @@
       <div class="questions">
         <p>If two sides of a triangle are equal, the triangle is called?</p>
         <label>
-          <input type="radio" name="question4" value="scalene" />
+          <input type="radio" name="question4" value="scalene" required/>
           scalene
         </label>
         <label
-          ><input type="radio" name="question4" value="isosceles" />
+          ><input type="radio" name="question4" value="isosceles" required/>
           isosceles</label
         >
         <label
           ><input
             type="radio"
             name="question4"
-            value="equilateral"
+            value="equilateral" required
           />equilateral</label
         >
       </div>
@@ -83,92 +83,92 @@
           If all the three sides of a triangle are equal, the triangle is called?
         </p>
         <label>
-          <input type="radio" name="question5" value="scalene" />
+          <input type="radio" name="question5" value="scalene" required/>
           scalene
         </label>
         <label
-          ><input type="radio" name="question5" value="isosceles" />
+          ><input type="radio" name="question5" value="isosceles" required />
           isosceles</label
         >
         <label
           ><input
             type="radio"
             name="question5"
-            value="equilateral"
+            value="equilateral" required
           />equilateral</label
         >
       </div>
       <div class="questions">
         <p>Which of the following triangles are always similar?</p>
         <label>
-          <input type="radio" name="question6" value="Equilateral triangle" />
+          <input type="radio" name="question6" value="Equilateral triangle" required/>
           Equilateral triangle
         </label>
         <label>
-          <input type="radio" name="question6" value="Isosceles triangle" />
+          <input type="radio" name="question6" value="Isosceles triangle" required/>
           Isosceles triangle</label
         >
       </div>
            <div class="questions">
         <p>Which ancient Greek philosopher studied triangles?</p>
         <label>
-          <input type="radio" name="question7" value="Plato" />
+          <input type="radio" name="question7" value="Plato" required/>
           Plato
         </label>
         <label>
-          <input type="radio" name="question7" value="Pythagoras" />
+          <input type="radio" name="question7" value="Pythagoras" required/>
           Pythagoras
         </label>
         <label>
-          <input type="radio" name="question7" value="Socrates" />
+          <input type="radio" name="question7" value="Socrates" required/>
           Socrates</label
         >
       </div>
            <div class="questions">
         <p>What type of shape is a triangle?</p>
         <label>
-          <input type="radio" name="question8" value="Polygon" />
+          <input type="radio" name="question8" value="Polygon" required/>
           Polygon
         </label>
         <label>
-          <input type="radio" name="question8" value="Pentagon" />
+          <input type="radio" name="question8" value="Pentagon" required/>
           Pentagon
         </label>
         <label>
-          <input type="radio" name="question8" value="Hexagon" />
+          <input type="radio" name="question8" value="Hexagon" required/>
           Hexagon</label
         >
       </div>
             <div class="questions">
         <p>How many dimensions does a triangle have?</p>
         <label>
-          <input type="radio" name="question9" value="1" />
+          <input type="radio" name="question9" value="1" required/>
           1
         </label>
         <label>
-          <input type="radio" name="question9" value="2" />
+          <input type="radio" name="question9" value="2" required/>
           2
         </label>
         <label>
-          <input type="radio" name="question9" value="3" />
+          <input type="radio" name="question9" value="3" required/>
           3</label
         >
       </div>
              <div class="questions">
         <p>A trapeze is a type of triangle?</p>
         <label>
-          <input type="radio" name="question10" value="True" />
+          <input type="radio" name="question10" value="True" required/>
           True
         </label>
         <label>
-          <input type="radio" name="question10" value="False" />
+          <input type="radio" name="question10" value="False" required/>
           False
         </label>
        
+        <button class="submit-btn">submit answers</button>
       </div>
       
     </form>
-    <button class="submit-btn">submit answers</button>
     <h2 class="output"></h2>
       <footer>
         <p>© | 2021 | aryanSharma</p>
