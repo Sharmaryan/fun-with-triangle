@@ -1,6 +1,6 @@
 # fun-with-triangle
 
-This triangle cah help you in calculating hypotenuse 📐, calculting area of 📐 triangle. It has quiz to test your knowledge.
+This triangle app cah help you in calculating hypotenuse 📐, calculting area of 📐 triangle. It has quiz to test your knowledge.
 
 # features
 - Calculate area of triangle
